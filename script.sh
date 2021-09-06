@@ -94,7 +94,7 @@ cpt=1
 while read -r line; do
     case $number_traitement in
     1)
-        cp "$line" $folder_to
+        cp --preserve "$line" $folder_to
     ;;
     2)
         mv "$line" $folder_to
